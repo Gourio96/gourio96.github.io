@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- ═══════════════════════════════════════════════════════════════
+     ARCHIVO 1/5 · LEEME-guia.html  (guía imprimible de publicación)
+     Guárdalo si quieres consultarla offline; el resto de archivos de
+     este paquete son los que se suben a GitHub Pages.
+     ═══════════════════════════════════════════════════════════════ -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guía de publicación · perfumesarabesoasistenerife.is-not-a.dev</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5/600.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5/700.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5/500.css">
+<style>
+:root{--papel:#FCF9F4;--tinta:#2E2528;--gris:#6B565D;--linea:#EADFD3;--oro:#8A6A33;--oro-bg:#F3E7D3;--verde:#2E7A58;--verde-bg:#E1EFE7;--azul:#3C6E96;--azul-bg:#E3ECF3;--f:'Inter',sans-serif;--m:'JetBrains Mono',monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--f);background:var(--papel);color:var(--tinta);line-height:1.7;font-size:15.5px}
+.wrap{max-width:900px;margin:auto;padding:0 24px}
+header{background:linear-gradient(140deg,#2E2528,#4B3A40 60%,#5C4033);color:#F5E9DC;padding:52px 0}
+header .tipo{font-size:.7rem;letter-spacing:.32em;text-transform:uppercase;color:#D9B98A;font-weight:600}
+header h1{font-size:clamp(1.7rem,3.6vw,2.6rem);margin:10px 0 8px}
+header p{color:#D8C6B6;max-width:660px}
+section{padding:44px 0;border-bottom:1px solid var(--linea)}
+h2{font-size:1.45rem;margin-bottom:16px}
+h2 .n{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--oro);color:#fff;font-size:.95rem;margin-right:10px}
+ol{margin-left:22px;display:grid;gap:10px}
+li b{color:var(--oro)}
+code,.mono{font-family:var(--m);font-size:.82em;background:#F1EAE0;border-radius:6px;padding:2px 7px;color:#7A5A28}
+pre{background:#2E2528;color:#F5E9DC;border-radius:14px;padding:18px 20px;overflow-x:auto;font-family:var(--m);font-size:.8rem;line-height:1.7;margin:14px 0}
+.nota{border-radius:14px;padding:16px 20px;font-size:.88rem;margin-top:16px}
+.nota.ok{background:var(--verde-bg);color:var(--verde);border:1px solid #BFDCcb}
+.nota.info{background:var(--azul-bg);color:var(--azul);border:1px solid #C4DAEA}
+.nota.warn{background:var(--oro-bg);color:#6A5226;border:1px solid #E4CFA8}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;font-size:.85rem;margin:14px 0}
+th{background:var(--oro-bg);color:var(--oro);text-align:left;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;padding:11px 14px}
+td{padding:11px 14px;border-top:1px solid var(--linea);vertical-align:top}
+footer{padding:34px 0;text-align:center;color:var(--gris);font-size:.78rem}
+@media print{section{break-inside:auto}pre{font-size:9px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <span class="tipo">Guía de publicación paso a paso</span>
+    <h1>Colgar la web en perfumesarabesoasistenerife.is-not-a.dev</h1>
+    <p>Tu captura muestra un CNAME <b>ya activo</b> hacia <code>gourio96.github.io</code>. Eso significa que el dominio funcionará en cuanto la web exista en ese GitHub Pages. Sigue estos pasos exactos.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2><span class="n">1</span>Crear el repositorio correcto en GitHub</h2>
+    <ol>
+      <li>Entra en <b>github.com</b> con la cuenta <code>gourio96</code> (la misma del CNAME).</li>
+      <li>Pulsa <b>+</b> (arriba derecha) → <b>New repository</b>.</li>
+      <li>En “Repository name” escribe <b>exactamente</b>: <code>gourio96.github.io</code> (si ya existe, sáltate este paso).</li>
+      <li>Márcalo <b>Public</b> y pulsa <b>Create repository</b>.</li>
+    </ol>
+    <div class="nota info">¿Por qué ese nombre? Porque tu CNAME apunta a <code>gourio96.github.io</code> (raíz). Solo el repositorio de usuario sirve la raíz; un repo de proyecto quedaría en <code>gourio96.github.io/nombre-repo</code> y el dominio no lo mostraría.</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2><span class="n">2</span>Subir los archivos de la web</h2>
+    <ol>
+      <li>Dentro del repositorio, pulsa <b>Add file → Upload files</b>.</li>
+      <li>Arrastra estos 5 archivos de este paquete: <code>index.html</code> (tu web v5), <code>estilos.css</code>, <code>colecciones.html</code>, <code>catalogo.html</code>, <code>ritual.html</code>.</li>
+      <li>Pulsa <b>Commit changes</b>.</li>
+      <li>Ahora <b>Add file → Create new file</b>, escribe como nombre <code>CNAME</code> (sin extensión) y como contenido exactamente:<pre>perfumesarabesoasistenerife.is-not-a.dev</pre></li>
+      <li>Pulsa <b>Commit changes</b>.</li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2><span class="n">3</span>Activar GitHub Pages</h2>
+    <ol>
+      <li>En el repositorio: <b>Settings → Pages</b>.</li>
+      <li>En “Source” elige <b>Deploy from a branch</b>.</li>
+      <li>En “Branch” selecciona <code>main</code> y carpeta <code>/ (root)</code> → <b>Save</b>.</li>
+      <li>Espera 1–3 minutos y abre: <code>https://perfumesarabesoasistenerife.is-not-a.dev</code> </li>
+    </ol>
+    <div class="nota ok">🔒 SSL: GitHub Pages emite gratis el certificado Let’s Encrypt del dominio personalizado. En Settings → Pages verás “Enforce HTTPS” activarse solo (puede tardar hasta 10–15 min la primera vez). No toques nada más en Open Domains: tu CNAME ya está “Active”.</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2><span class="n">4</span>Convertir el menú en páginas reales (multi-página)</h2>
+    <p style="margin-bottom:10px">Sí, puedo crearlas y ya están en este paquete. Para que el menú de <code>index.html</code> las abra, edita en GitHub el bloque <code>&lt;div class="nav-links"&gt;</code> de <code>index.html</code> (icono ✏️ del archivo → editar) y sustitúyelo por:</p>
+<pre>&lt;div class="nav-links" id="navLinks"&gt;
+  &lt;a href="index.html"&gt;Inicio&lt;/a&gt;
+  &lt;a href="colecciones.html"&gt;Colecciones&lt;/a&gt;
+  &lt;a href="catalogo.html"&gt;Catálogo&lt;/a&gt;
+  &lt;a href="ritual.html"&gt;El Ritual&lt;/a&gt;
+  &lt;a href="index.html#blog"&gt;Blog&lt;/a&gt;
+  &lt;a href="index.html#visita"&gt;Visítanos&lt;/a&gt;
+&lt;/div&gt;</pre>
+    <p>Y, si quieres que los dos paneles grandes “Ella / Él” del inicio también lleven a la página de colecciones, cambia en cada <code>&lt;article class="panel …"&gt;</code> el atributo <code>data-ir="mujer"</code> por <code>onclick="location.href='colecciones.html'"</code> (o déjalo como está: filtra el catálogo del inicio, que también es correcto).</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2><span class="n">5</span>Estructura final del repositorio</h2>
+    <table>
+      <tr><th>Archivo</th><th>Qué es</th><th>URL pública</th></tr>
+      <tr><td><code>index.html</code></td><td>Portada editorial (v5)</td><td>/ (raíz del dominio)</td></tr>
+      <tr><td><code>estilos.css</code></td><td>Hoja de estilos compartida de las subpáginas</td><td>—</td></tr>
+      <tr><td><code>colecciones.html</code></td><td>Colección Ella + Colección Él completas</td><td>/colecciones.html</td></tr>
+      <tr><td><code>catalogo.html</code></td><td>Catálogo completo con filtros y buscador</td><td>/catalogo.html</td></tr>
+      <tr><td><code>ritual.html</code></td><td>El Ritual + FAQ + Visítanos</td><td>/ritual.html</td></tr>
+      <tr><td><code>CNAME</code></td><td>Vincula el subdominio con GitHub Pages</td><td>—</td></tr>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2><span class="n">6</span>Solución de problemas</h2>
+    <table>
+      <tr><th>Síntoma</th><th>Causa probable</th><th>Solución</th></tr>
+      <tr><td>El dominio no carga</td><td>Pages no activado o repo con otro nombre</td><td>Revisa pasos 1 y 3; el repo debe llamarse <code>gourio96.github.io</code></td></tr>
+      <tr><td>Candado rojo / “not secure”</td><td>Certificado aún emitiéndose</td><td>Esperar 10–15 min; GitHub lo activa solo</td></tr>
+      <tr><td>404 en /colecciones.html</td><td>Mayúsculas o nombre distinto</td><td>Los nombres deben ir en minúsculas, tal cual esta tabla</td></tr>
+      <tr><td>Cambios no visibles</td><td>Caché del navegador</td><td>Ctrl/Cmd + Shift + R (recarga dura)</td></tr>
+      <tr><td>WhatsApp no abre chat real</td><td><code>WA_NUM</code> sigue de marcador</td><td>Editar en los 4 HTML la constante <code>WA_NUM</code> con el número real</td></tr>
+    </table>
+    <div class="nota warn">Para actualizar la web en el futuro: sube el archivo nuevo con el mismo nombre (Commit) y GitHub Pages lo publica solo en ~1 minuto.</div>
+  </div>
+</section>
+
+<footer><div class="wrap">Guía de publicación · Perfumes Árabes Oasis Tenerife · 12 de agosto de 2026</div></footer>
+</body>
+</html>
