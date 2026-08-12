@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- GUARDAR COMO: blog.html -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog · El Rincón de la Esencia | Perfumes Árabes Oasis Tenerife</title>
+<meta name="description" content="Blog de perfumería árabe en Tenerife: guías, consejos y marcas. Cómo elegir tu primer perfume árabe, trucos de duración y casas que arrasan.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23171314'/><path d='M14 52V30C14 17 22 10 32 10s18 7 18 20v22' stroke='%23DDBA7E' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M32 22c5 7 7 11 7 15a7 7 0 1 1-14 0c0-4 2-8 7-15z' fill='%23E9B7B0'/></svg>">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/fraunces@5/600.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/fraunces@5/700.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/fraunces@5/600-italic.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jost@5/300.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jost@5/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jost@5/500.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jost@5/600.css">
+<link rel="stylesheet" href="estilos.css">
+<style>
+.blog-lista{max-width:880px;margin:auto;display:grid;gap:28px}
+.post{background:#fff;border-radius:24px;overflow:hidden;border:1px solid rgba(199,155,92,.18);box-shadow:0 10px 30px -16px rgba(110,70,80,.2)}
+.post-portada{height:140px;display:grid;place-items:center;font-size:3rem}
+.p-guias{background:linear-gradient(135deg,var(--rosa),#F3C4BD)}
+.p-consejos{background:linear-gradient(135deg,var(--menta),#C7E6D3)}
+.p-marcas{background:linear-gradient(135deg,var(--cielo),#C4DAEA)}
+.post-cuerpo{padding:26px 30px 30px}
+.post-cuerpo h3{font-size:1.6rem;font-weight:700;margin:6px 0 10px}
+.post-meta{display:flex;gap:14px;flex-wrap:wrap;font-size:.76rem;color:var(--tinta-suave);margin-bottom:14px}
+.cuerpo{display:none;font-weight:300;color:var(--tinta-suave);line-height:1.85;margin-top:16px}
+.post.abierto .cuerpo{display:block}
+.cuerpo h4{font-family:var(--f-d);font-size:1.2rem;color:var(--oro-osc);margin:18px 0 8px}
+.leer{border:none;background:var(--lila);color:var(--lila-t);border-radius:999px;padding:10px 22px;font-family:var(--f-b);font-weight:600;font-size:.8rem;cursor:pointer;transition:transform .3s}
+.leer:hover{transform:translateY(-2px)}
+</style>
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header id="header">
+  <nav class="nav">
+    <a class="logo" href="index.html" aria-label="Inicio Perfumes Árabes Oasis Tenerife">
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><defs><linearGradient id="oroG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DDBA7E"/><stop offset="1" stop-color="#8A6A33"/></linearGradient><linearGradient id="rosaG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7DCD7"/><stop offset="1" stop-color="#E9B7B0"/></linearGradient></defs><path d="M10 58 V30 C10 15 20 6 32 6 C44 6 54 15 54 30 V58" stroke="url(#oroG)" stroke-width="3.4" stroke-linecap="round"/><path d="M10 58 H54" stroke="url(#oroG)" stroke-width="3.4" stroke-linecap="round"/><path d="M32 18 C38.5 27 41 32.5 41 38 a9 9 0 1 1 -18 0 C23 32.5 25.5 27 32 18 Z" fill="url(#rosaG)" stroke="url(#oroG)" stroke-width="2"/></svg>
+      <span class="logo-nombre"><b>Perfumes Árabes</b><span>Oasis · Tenerife</span></span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Inicio</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="ritual.html">El Ritual</a>
+      <a href="blog.html" class="actual">Blog</a>
+      <a href="index.html#visita">Visítanos</a>
+    </div>
+    <a class="btn-ig-circ" href="https://www.instagram.com/perfumesarabesoasistenerife/" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.3" fill="currentColor" stroke="none"/></svg>
+    </a>
+    <button class="burger" id="burger" aria-label="Abrir menú"><i></i><i></i><i></i></button>
+  </nav>
+</header>
+<main id="contenido">
+  <div class="page-hero">
+    <span class="kicker">Blog · El Rincón de la Esencia</span>
+    <h1>Secretos de la <em>perfumería</em> árabe</h1>
+    <div class="adorno">✦</div>
+    <p>Guías, trucos y marcas: todo lo que necesitas para elegir tu próxima fragancia con criterio.</p>
+  </div>
+  <section style="padding-top:0">
+    <div class="contenedor blog-lista">
+      <article class="post reveal">
+        <div class="post-portada p-guias" aria-hidden="true">🌸</div>
+        <div class="post-cuerpo">
+          <span class="card-marca">Guías</span>
+          <h3>Cómo elegir tu primer perfume árabe en Tenerife: guía completa</h3>
+          <div class="post-meta"><span>✍ Equipo Oasis</span><span>⏱ 3 min</span></div>
+          <button class="leer" type="button">Leer artículo ↓</button>
+          <div class="cuerpo">
+            <p>Si estás buscando perfumes árabes en Tenerife, es normal sentirse abrumado ante tantas marcas y nombres exóticos. Esta guía te lo pone fácil.</p>
+            <h4>¿Qué los hace especiales?</h4>
+            <p>La perfumería árabe usa concentraciones de aceite muy superiores a la media, con ingredientes como oud, ámbar gris, almizcle, rosa de Taif o azafrán. Resultado: fragancias intensas, duraderas y con estela inconfundible.</p>
+            <h4>Paso 1: define tu familia olfativa</h4>
+            <p>¿Dulce? Gourmands como Khamrah. ¿Fresco? Acuáticas como Hawas Ice, perfectas para el clima canario. ¿Floral? Yara y sus hermanas te enamorarán.</p>
+            <h4>Paso 2: prueba siempre en piel</h4>
+            <p>Cada perfume reacciona distinto en cada piel. En nuestra tienda de Santa Cruz puedes probarlos todos sin compromiso.</p>
+            <h4>Paso 3: déjate asesorar</h4>
+            <p>Cuéntanos ocasión, gustos y presupuesto, y saldrás con tu historia embotellada. Te esperamos en Calle Valentín Sanz 39 (Galería Venecia).</p>
+          </div>
+        </div>
+      </article>
+      <article class="post reveal">
+        <div class="post-portada p-consejos" aria-hidden="true">💫</div>
+        <div class="post-cuerpo">
+          <span class="card-marca">Consejos</span>
+          <h3>5 trucos para que tu perfume árabe dure más de 12 horas</h3>
+          <div class="post-meta"><span>✍ Equipo Oasis</span><span>⏱ 2 min</span></div>
+          <button class="leer" type="button">Leer artículo ↓</button>
+          <div class="cuerpo">
+            <h4>1. Hidrata tu piel antes</h4>
+            <p>El perfume se fija mejor sobre piel hidratada: aplica crema neutra antes de pulverizar.</p>
+            <h4>2. Pulveriza en puntos de calor</h4>
+            <p>Muñecas, cuello, detrás de las orejas y pliegue del codo proyectan mejor la fragancia.</p>
+            <h4>3. No frotes las muñecas</h4>
+            <p>Al frotar rompes las moléculas y aceleras la evaporación. Pulveriza y deja secar.</p>
+            <h4>4. Perfuma también la ropa</h4>
+            <p>Los tejidos retienen el aroma días; pulveriza a 20 cm para evitar manchas.</p>
+            <h4>5. Guarda bien tu frasco</h4>
+            <p>Lejos de sol, calor y humedad: un armario fresco conserva la esencia intacta.</p>
+          </div>
+        </div>
+      </article>
+      <article class="post reveal">
+        <div class="post-portada p-marcas" aria-hidden="true">🏺</div>
+        <div class="post-cuerpo">
+          <span class="card-marca">Marcas</span>
+          <h3>Lattafa, Rasasi y Armaf: las casas árabes que arrasan en Canarias</h3>
+          <div class="post-meta"><span>✍ Equipo Oasis</span><span>⏱ 2 min</span></div>
+          <button class="leer" type="button">Leer artículo ↓</button>
+          <div class="cuerpo">
+            <h4>Lattafa: lujo accesible</h4>
+            <p>La casa de Dubái que conquistó el mundo con Khamrah, Asad o Yara: frascos espectaculares y calidad de nicho a precios sorprendentes.</p>
+            <h4>Rasasi: tradición emiratí</h4>
+            <p>Décadas de historia y la saga Hawas, con versiones para todos los gustos: de lo acuático a lo goloso.</p>
+            <h4>Armaf: elegancia contemporánea</h4>
+            <p>Fragancias con proyección descomunal que compiten con firmas de lujo.</p>
+            <p>Las tres te esperan en Calle Valentín Sanz 39, con novedades cada semana anunciadas en Instagram. ¡Ven a probarlas en piel!</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="foot-int">
+    <div>
+      <div class="foot-logo"><svg viewBox="0 0 64 64" width="40" height="40" fill="none" aria-hidden="true"><path d="M10 58 V30 C10 15 20 6 32 6 C44 6 54 15 54 30 V58 M10 58 H54" stroke="#C79B5C" stroke-width="3.4" stroke-linecap="round"/><path d="M32 18 C38.5 27 41 32.5 41 38 a9 9 0 1 1 -18 0 C23 32.5 25.5 27 32 18 Z" fill="#E9B7B0" stroke="#C79B5C" stroke-width="2"/></svg><b>Perfumes Árabes Oasis Tenerife</b></div>
+      <p>Calle Valentín Sanz 39 (Galería Venecia)<br>Santa Cruz de Tenerife, Canarias</p>
+      <span class="ssl-badge" id="sslBadge">🔒 Comprobando conexión…</span>
+    </div>
+    <div>
+      <p><a href="catalogo.html">Catálogo</a> · <a href="ritual.html">El Ritual</a> · <a href="blog.html">Blog</a><br>
+      <a href="https://www.instagram.com/perfumesarabesoasistenerife/" target="_blank" rel="noopener">@perfumesarabesoasistenerife</a><br>
+      <a href="legales.html">Aviso legal</a> · <a href="legales.html">Privacidad</a> · <a href="legales.html">Cookies</a></p>
+    </div>
+  </div>
+  <div class="foot-fin"><span>© <span id="anio"></span> Perfumes Árabes Oasis Tenerife</span><span>Hecho con ✨ y esencia de oud</span></div>
+</footer>
+<a class="wa-flotante" id="waFlotante" target="_blank" rel="noopener" aria-label="Chatear por WhatsApp">
+  <span class="tip">¿Te asesoramos? 💬</span>
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.3 1.1 2.3 1.5 2.7 1.6.3.2.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.3.6.4.1.2.1.8-.1 1.5Z"/></svg>
+</a>
+<script>
+const WA_NUM = "34600000000";
+document.getElementById("waFlotante").href = "https://wa.me/" + WA_NUM + "?text=" + encodeURIComponent("¡Hola Perfumes Árabes Oasis Tenerife! ✨ Me gustaría hacer una consulta.");
+document.querySelectorAll(".leer").forEach(function(boton){
+  boton.addEventListener("click", function(){
+    const post = boton.closest(".post");
+    const abierto = post.classList.toggle("abierto");
+    boton.textContent = abierto ? "Cerrar artículo ↑" : "Leer artículo ↓";
+  });
+});
+window.addEventListener("scroll", function(){ document.getElementById("header").classList.toggle("scrolled", window.scrollY > 30); }, {passive:true});
+document.getElementById("burger").addEventListener("click", function(){ document.getElementById("navLinks").classList.toggle("abierto"); });
+document.querySelectorAll(".nav-links a").forEach(function(a){ a.addEventListener("click", function(){ document.getElementById("navLinks").classList.remove("abierto"); }); });
+const obs = new IntersectionObserver(function(e){ e.forEach(function(x){ if(x.isIntersecting){ x.target.classList.add("visible"); obs.unobserve(x.target); } }); },{threshold:.15});
+document.querySelectorAll(".reveal").forEach(function(el){ obs.observe(el); });
+document.getElementById("anio").textContent = new Date().getFullYear();
+document.getElementById("sslBadge").textContent = location.protocol === "https:" ? "🔒 Conexión segura · Certificado SSL activo" : "⚠️ Conexión sin cifrar";
+</script>
+</body>
+</html>
