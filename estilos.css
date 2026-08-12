@@ -155,3 +155,4 @@ footer a:hover{color:#fff}
   .burger{display:flex}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+.btn-ig-circ .tip-ig{display:none}
