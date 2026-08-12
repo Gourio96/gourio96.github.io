@@ -15,7 +15,7 @@ const PERFUMES = [
  {cat:"mujer",col:true, marca:"Oasis Edition",nombre:"Jannat Fresca",familia:"Verde almizclada",notas:["Té verde","Almizcle blanco","Bambú"],precio:29.90,ml:100,badge:"",img:B+"14ba7c633-4705-4298-abd3-602b2f117669.png"},
  {cat:"hombre",col:true, marca:"Rasasi",nombre:"Hawas Ice",familia:"Aromática acuática",notas:["Cítricos","Notas marinas","Ámbar gris"],precio:41.90,ml:100,badge:"Top ventas",img:B+"11033dd5c-a6d6-4575-8238-187cd9f89d6a.png"},
  {cat:"hombre",col:true, marca:"Lattafa",nombre:"Khamrah Ámbar",familia:"Ámbar especiada",notas:["Dátiles","Canela","Ámbar"],precio:38.90,ml:100,badge:"Favorito",img:B+"15cc1fac9-7d9c-47b3-8a02-0dbb49691a43.png"},
- {cat:"hombre",col:true, marca:"Rayhaan",nombre:"Rayhaan",familia:"Ámbar aromática",notas:["Naranja","Lavanda","Vainilla","Ámbar"],precio:42.90,ml:100,badge:"Nuevo",img:"rayhaan.png"},
+ {cat:"hombre",col:true, marca:"Rayhaan",nombre:"Rayhaan",familia:"Ámbar aromática",notas:["Naranja","Lavanda","Vainilla","Ámbar"],precio:42.90,ml:100,badge:"Nuevo",img:"rayhaanElixir.png"},
  {cat:"hombre",col:false,marca:"Lattafa",nombre:"Asad Noir",familia:"Especiada amaderada",notas:["Pimienta negra","Oud","Vainilla"],precio:36.90,ml:100,badge:"",img:B+"1c34ff835-3565-4caa-80cb-2bb3a73468b4.png"},
  {cat:"hombre",col:false,marca:"Lattafa",nombre:"Fakhar Gentlemen",familia:"Aromática moderna",notas:["Bergamota","Lavanda","Cedro"],precio:35.50,ml:100,badge:"",img:B+"1a53f4d69-f909-496a-acaf-427a6c040277.png"}
 ];
