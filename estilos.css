@@ -156,3 +156,12 @@ footer a:hover{color:#fff}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
 .btn-ig-circ .tip-ig{display:none}
+/* ══ BARRA SUPERIOR NEGRA ══ */
+header{background:#171314;border-bottom:1px solid rgba(221,186,126,.25)}
+header.scrolled{background:rgba(23,19,20,.94)}
+.logo-nombre b{color:#F5E9DC}
+.logo-nombre span{color:#DDBA7E}
+.nav-links a{color:#CBB7A8}
+.nav-links a:hover,.nav-links a.actual{color:#FFFFFF}
+.nav-links a::after{background:#DDBA7E}
+.burger i{background:#F5E9DC}
